@@ -1,0 +1,9 @@
+# heavy folders
+data
+
+# machine and transfer artifacts
+*.swp
+*.swo
+.DS_Store
+Rplots.pdf
+.Rhistory
