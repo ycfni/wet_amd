@@ -10,7 +10,48 @@ YCFNI github account for reference.
 
 # Usage
 To use this repository, you will first need to install the necessary command
-line tools to allow Seurat to run on your computer.  Please follow the
+line tools to allow Seurat to run on your computer.  
+
+We have found that for macOS, you will need to install a few things
+prior to attempting the installation. First you will need to install
+the Xcode developer tools for mac. Please follow the instructions
+[here](https://mac.install.guide/commandlinetools/index.html)
+
+You can run:
+
+    xcode-select -p
+
+in a command prompt, to check if the command line utilities have been
+properly installed.
+
+You will also likely need to install Homebrew, a package manager for
+mac. To check if homebrew is installed, type
+
+    brew
+
+on a command prompt (Terminal) window. If the command is not found,
+you should install homebrew by running
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+You will then need to install several other dependencies using homebrew
+prior to running the installation from RStudio.  These commands should be
+executed from a normal (Terminal) command prompt (bash) and not from the
+R console.
+
+    brew install openssl
+
+Now in the R console, you may need to install.
+
+    install.packages('httr')
+    install.packages('igraph')
+    install.packages('leiden')
+    install.packages('Rtsne')
+    install.packages('sctransform')
+    install.packages('SeuratObject')
+    install.packages('RcppEigen')
+
+Please follow the
 installation instructions for Seurat 
 [here](https://satijalab.org/seurat/articles/install.html).
 
