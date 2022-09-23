@@ -42,6 +42,10 @@ R console.
     brew install openssl
     brew install gcc
 
+You may also need to update your R makevars accordingly
+
+    echo "FLIBS=-L$(brew --prefix gcc)/lib" >> ~/.R/Makevars
+
 Now in the R console, you may need to install.
 
     install.packages('httr')
