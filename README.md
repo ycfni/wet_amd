@@ -40,6 +40,7 @@ executed from a normal (Terminal) command prompt (bash) and not from the
 R console.
 
     brew install openssl
+    brew install gcc
 
 Now in the R console, you may need to install.
 
